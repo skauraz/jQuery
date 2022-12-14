@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Wonders of the World</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&family=Inter:wght@500&family=Lora&family=PT+Serif&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:antiquewhite;
+    font-size:16px;
+}
+
+#head{
+    background-color: #D95D39;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    color: #0E1428;
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+}
+
+nav{
+    background-color: #c15133;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 3vmin;
+    padding: 1vmin;
+}
+
+#link{
+    color: black;
+    text-decoration: none;
+}
+
+#bar{
+    text-align: center;
+    margin: 10px;
+    font-family: 'PT Serif', serif;
+}
+
+#image{
+    width: 90%;
+    height: 500px;
+    margin-left: 100px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#accordion{
+    width: 98%;
+    margin: 10px;
+}
+
+#Titles{
+    color: #0E1428;
+    font-family: 'PT Serif', serif;
+    background-color: #F18805;
+    font-size: 20px;
+}
+
+#accordionBoxes{
+    background-color: antiquewhite;
+    height: 1000px;
+    overflow-y: hidden;
+}
+
+h2{
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+
+p{
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 25px;
+}
+
+
+
+
+/* Wonders */
+#sevenww{
+    scale: .5;
+    width: 100%;
+    transition: .5s;
+}
+
+#sevenww:hover {
+    box-shadow:  rgb(144, 119, 119) 0px 5px 15px 5px;
+    scale: .5;
+}
+
+.gwewa{
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 35px;
+}
+
+#GuessBox{
+    width: 80vw;
+    height: 250vh;
+    margin-left: 190px;
+    display: grid;
+    grid-template: repeat(7,1fr) / repeat(2 , 1fr);
+    gap: 10px;
+}
+
+.Location{
+    width: 100%;
+    height: 100%;
+}
+
+#locImg{
+    width: 600px;
+    height: 300px;
+    
+    display: grid;
+    place-content: center;
+    margin-left: 80px;
+
+}
+
+.Answer{
+    border: solid 2px;
+    width: 100%;
+    height: 100%;
+}
+
+#answ{
+    text-align: center;
+    line-height: 300px;
+    font-size: 25px;
+    font-family: 'PT Serif', serif;
+}
+
+
+#Foot{
+    
+    height: 200px;
+    background-color: #c15133;
+}
+
+#texth{
+    line-height: 35px;
+    margin-bottom: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+#apple{
+    font-size: 25px;
+}
+
+#orange{
+    font-size: 20px;
+    text-align: center; 
+}
+
+#linkk{
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+}
+</style>
+
+</head>
+<body>
+
+  <header id = "head">
+    <a id = "link" href = "index.html"><h1>The 7 Wonders of the World</h1></a>
+  </header>
+
+  <nav>
+    <div id = "bar"><a id = "link" href="https://www.google.com/maps/place/Colosseum/@41.8902142,12.4900422,17z/data=!3m1!4b1!4m5!3m4!1s0x132f61b6532013ad:0x28f1c82e908503c4!8m2!3d41.8902102!4d12.4922309" target="_blank">First Wonder</a></div>
+    <div id = "bar">|</div>
+    <div id = "bar"><a id = "link" href="https://www.google.com/maps/place/Great+Wall+of+China/@40.4319118,116.5681862,17z/data=!3m1!4b1!4m5!3m4!1s0x35f121d7687f2ccf:0xd040259b950522df!8m2!3d40.4319077!4d116.5703749" target="_blank">Second Wonder</a></div>
+    <div id = "bar">|</div>
+    <div id = "bar"><a id = "link" href="https://www.google.com/maps/place/Taj+Mahal/@27.1751496,78.0399535,17z/data=!3m1!4b1!4m5!3m4!1s0x39747121d702ff6d:0xdd2ae4803f767dde!8m2!3d27.1751448!4d78.0421422" target="_blank">Third Wonder</a></div>
+    <div id = "bar">|</div>
+    <div id = "bar"><a id = "link" href="https://www.google.com/maps/place/Christ+the+Redeemer/@-22.951911,-43.2126759,17z/data=!3m1!4b1!4m5!3m4!1s0x997fd5984aa13f:0x9dc984d7019502de!8m2!3d-22.951916!4d-43.2104872" target="_blank">Fourth Wonder</a></div>
+    <div id = "bar">|</div>
+    <div id = "bar"><a id = "link" href = "https://www.google.com/maps/place/Machu+Picchu/@-13.163136,-72.5471516,17z/data=!3m1!4b1!4m5!3m4!1s0x916d9a5f89555555:0x3a10370ea4a01a27!8m2!3d-13.1631412!4d-72.5449629" target = "_blank">Fith Wonder</a></div>
+    <div id = "bar">|</div>
+    <div id = "bar"><a id = "link" href = "https://www.google.com/maps/place/Chich%C3%A9n+Itz%C3%A1/@20.6835593,-88.5801601,14z/data=!4m10!1m2!2m1!1schichen+itza!3m6!1s0x8f5138c6e391c0e7:0x7c1ea0a168994d9a!8m2!3d20.6842849!4d-88.5677826!15sCgxjaGljaGVuIGl0emFaDiIMY2hpY2hlbiBpdHphkgETYXJjaGFlb2xvZ2ljYWxfc2l0ZZoBI0NoWkRTVWhOTUc5blMwVkpRMEZuU1VSTmRHODNWa3RuRUFF4AEA!16zL20vMDE3a3B2" target = "_blank">Sixth Wonder</a></div>
+    <div id = "bar">|</div>
+    <div id = "bar"><a id = "link" href = "https://www.google.com/maps/place/Petra/@30.328459,35.4421735,17z/data=!3m1!4b1!4m5!3m4!1s0x15016ef1703b6071:0x199bf908679a2291!8m2!3d30.3284544!4d35.4443622" target = "_blank">Seventh Wonder</a></div>
+  </nav>
+
+  <div>
+    <img id = "image" src = "7WW.jpg">
+  </div>
+
+  <div id="accordion">
+    <h3 id = "Titles"> The Colosseum</h3>
+  <div id = "accordionBoxes">
+    <h2>The Roman Colosseum</h1>
+    <br>
+    <p id = "p">The Roman Colosseum is a structre that was made from 72 AD to 80 AD. It was made with the purpose of being a place that hosted 
+    <br>gladiator fights, open executions, dramas, mock battles, and re-enactments of famous battles. The former roman emperor Vespasian
+    <br>made the Colosseum as part of an imperial effort to revitalize Rome. The Colosseum can be visted today in present day Rome, Italy
+    <br>
+    </p>
+    <img  id = "sevenww" src = "Colosseum.jpg">
+    
+  </div>
+    <h3 id = "Titles"> The Great Wall of China</h3>
+  <div id = "accordionBoxes">
+    <h2>The Great Wall Of China</h2>
+    <br>
+    <p id = "p">The Great Wall of China is a series of fortafications that rung along the historical northern borders of 
+    <br>ancient Chinese states and Imperial China as protection against various nomadic groups from the Eurasian Steppe.
+    <br>Apart from defense, other purposes of the Great Wall have included border controls, allowing the imposition of duties 
+    <br>on goods transported along the Silk Road, regulation or encouragement of trade and the control of immigration and emigration. 
+    <br>Today it can be view as a popular tourist spot in china.
+    </p>
+    <img  id = "sevenww" src = "Great Wall.jpg">
+  </div>
+    <h3 id = "Titles"> The Taj Mahal</h3>
+  <div id = "accordionBoxes">
+    <h2>The Taj Mahal</h2>
+    <br>
+    <p>The Taj Mahal is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city 
+    <br>of Agra. It was commissioned in 1631 by the Mughal emperor Shah Jahan to house the tomb of his favourite wife, 
+    <br>Mumtaz Mahal; it also houses the tomb of Shah Jahan himself. The Taj Mahal today can be visted by tourist from 30 Minutes 
+    <br>before Sunrise up to 30 Minutes before Sunset.
+    </p>
+    <img  id = "sevenww" src = "Taj Mahal.jpg">
+  </div>
+    <h3 id = "Titles"> Christ the Redeemer</h3>
+  <div id = "accordionBoxes">
+    <h2>The Christ Redeemer</h2>
+    <br>
+    <p>The Christ Redeemer is an Art Deco statue of Jesus Christ in Rio de Janeiro, Brazil, created by French sculptor 
+    <br>Paul Landowski and built by Brazilian engineer Heitor da Silva Costa, in collaboration with French engineer Albert Caquot. 
+    <br>Romanian sculptor Gheorghe Leonida sculpted the face. Constructed between 1922 and 1931, the statue is 30 metres high, 
+    <br>excluding its 8-metre pedestal. The arms stretch 28 metres wide. It is made of reinforced concrete and soapstone.
+    <br>Today tourist are able to view and vist the Chirst Redeemer today.
+  </p>
+    <br>
+    <img  id = "sevenww" src = "Christ Redeemer.webp">
+  </div>
+    <h3 id = "Titles"> Machu Picchu</h3>
+  <div id = "accordionBoxes">
+    <h2>Machu Picchu</h2>
+    <br>
+    <p>Machu Picchu is a 15th-century Inca citadel located in the Eastern Cordillera of southern Peru on a 2,430-meter mountain range.
+    <br>It is located in the Machupicchu District within Urubamba Province[4] above the Sacred Valley, which is 80 kilometers northwest 
+    <br>of Cusco. The Urubamba River flows past it, cutting through the Cordillera and creating a canyon with a tropical mountain climate.
+    <br>Tourist are able to book tours and such to tour and view Machu Picchu.
+    </p>
+    <br>
+    <img  id = "sevenww" src = "Machu Picchu.jpg">
+  </div>
+    <h3 id = "Titles"> Chichén Itzá</h3>
+  <div id = "accordionBoxes">
+    <h2>Chichén Itzá</h2>
+    <br>
+    <p>Chichen Itza was a major focal point in the Northern Maya Lowlands from the Late Classic from 600 AD to 900 AD through the 
+    <br>Terminal Classic from 800 AD to 900 AD and into the early portion of the Postclassic period wich was from 900 AD to 1200 AD.
+    <br>The site exhibits a multitude of architectural styles, reminiscent of styles seen in central Mexico and of the Puuc and Chenes 
+    <br>styles of the Northern Maya lowlands. The presence of central Mexican styles was once thought to have been representative of 
+    <br>direct migration or even conquest from central Mexico, but most contemporary interpretations view the presence of these non-Maya 
+    <br>styles more as the result of cultural diffusion. Tourist are able to view Chichén Itzá today and its considered to be one of mexicos 
+    <br>most toursits attraction
+    </p>
+    <br>
+    <img  id = "sevenww" src = "Chichen Itza.webp">
+  </div>
+    <h3 id = "Titles"> Petra</h3>
+  <div id = "accordionBoxes">
+    <h2>Petra</h2>
+    <br>
+    <p>Petra, originally known to its inhabitants as Raqmu or Raqēmō, is an historic and archaeological city in southern Jordan. 
+    <br>It is adjacent to the mountain of Jabal Al-Madbah, in a basin surrounded by mountains forming the eastern flank of the 
+    <br>Arabah valley running from the Dead Sea to the Gulf of Aqaba.The area around Petra has been inhabited from as early as 
+    <br>7000 BC, and the Nabataeans might have settled in what would become the capital city of their kingdom as early as the 
+    <br>4th century BC. Today tourist are required to have the Jordan pass to view petra and 40 other attractions.
+    </p>
+    <img  id = "sevenww" src = "Petra.webp">
+  </div>
+  </div>
+  <br>
+
+    <h3 class = "gwewa">Guess Where Each Of the Wonders Are!</h3>
+
+  <br>  
+  <div id = "GuessBox">
+
+    <div class = "Location">
+      <img id = "locImg" src = "Colosseum.jpg">
+    </div>
+    <div class = "Answer">  
+      <h3 id = "answ">China</h3>
+    </div>
+    <div class = "Location">
+      <img id = "locImg" src = "Great Wall.jpg">
+    </div>
+    <div class = "Answer">
+      <h3 id = "answ">Jordan</h3>
+    </div>
+    <div class = "Location">
+      <img id = "locImg" src = "Taj Mahal.jpg">
+    </div>
+    <div class = "Answer">
+      <h3 id = "answ">Rio de Janeiro, Brazila</h3>
+    </div>
+    <div class = "Location">
+      <img id = "locImg" src="Christ Redeemer.webp">
+    </div>
+    <div class = "Answer">
+      <h3 id = "answ">Peru</h3>
+    </div>
+    <div class = "Location">
+      <img id = "locImg" src="Machu Picchu.jpg">
+    </div>
+    <div class = "Answer">
+      <h3 id = "answ">Agra, India</h3>
+    </div>
+    <div class = "Location">
+      <img id = "locImg" src="Chichen Itza.webp">
+    </div>
+    <div class = "Answer">
+      <h3 id = "answ">Yucatan, Mexico</h3>
+    </div>
+    <div class = "Location">
+      <img id = "locImg" src="Petra.webp">
+    </div>
+    <div class = "Answer">
+      <h3 id = "answ">Rome, Italy</h3>
+    </div>
+  </div>
+  <br>
+
+  <footer id = "Foot">
+    <h3 id = "texth">About</h3>
+    <h3 id = "texth">&copy 7 Wonders of the World</h3>
+    <div id = "texth">
+    <i id = "apple" class="fa fa-facebook-square"></i>
+    <i id = "apple" class="fa fa-instagram"></i>
+    <i id = "apple" class="fa fa-reddit-alien"></i>
+    </div>
+    <div id = "linkk"><a id = "linkk" href= "index2.html">Suscribe to our Newsletter</a></div>
+  </footer>
+</body>
+
+<script>
+// Function to dragg objects across the screen //
+$( function() {
+        $( "#draggable" ).draggable();
+        } );
+
+        // Function to drag and drop objects //
+        $( function() {
+            $( ".Location" ).draggable();
+            $( ".Answer" ).droppable(
+            {
+                drop: function( event, ui )
+                {
+                    $( this )
+                    .addClass( "ui-state-highlight" )
+                    .find( "p" )
+                    .html( "Dropped!" );
+                }
+            });
+          } );
+
+        // Function to accordion sections so that there are collapsible //
+        $( function() {
+        $( "#accordion" ).accordion(
+        {
+        collapsible: true
+        });
+        } );
+</script>
+</html>
